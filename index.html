@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+<script defer src="main.bundle.js"></script></head>
+<body>
+    <!-- Sidebar -->
+<div class="sidebar" id="sidebar">
+    
+    <a href="#home">Home</a>
+     <!-- Projects with Subnavigation -->
+  <div class="submenu">
+    <a href="#projects" class="submenu-toggle">Projects ▾</a>
+    <div class="submenu-items">
+      
+    </div>
+  </div>
+    <a href="#alltasks">All Tasks</a>
+    <a href="#completedtasks">Completed Tasks</a>
+  </div>
+
+<!-- Main Content -->
+<div class="main-content" id="main-content">
+    
+    <h1>Welcome</h1>
+    <button id="OpenProjectPopup" class="mainButton">Add Project</button>
+    <button id="OpenTaskPopup" class="mainButton">Add task</button>
+    <div id="taskformPopup" class="popup">
+        <div class="popup-content">
+            <h2>Add/Edit Todo Task</h2>
+            <form id="taskSubmit">
+                <div>
+                    <label>Project:</label>
+                    <select id="projectOptions">
+                        
+                      </select>
+                      </div>
+                      <div>
+                    <label>
+                        Task Name:
+                    </label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label>
+                        Description: 
+                    </label>
+                    <input type="text" id="description" name="description" required>
+                </div>
+                <div>
+                    <label>
+                        Due date:
+                    </label>
+                    <input type="date" id="duedate" name="dueDate" required>
+                </div>
+                <div>
+                    <label>
+                        Priority:
+                    </label>
+                    <button type="button" id="low" class="priorityButton">Low</button>
+                    <button type="button" id="medium" class="priorityButton">medium</button>
+                    <button type="button" id="high" class="priorityButton">High</button>
+                </div>
+
+            </form>
+            <div class="formAction">
+                <button id="closeTaskPopup" class="closeButton">Close</button>
+                <button id="AddTaskButton" type="submit" class="actionButton">Add Task</button>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div id="projectPopup" class="popup">
+        <div class="popup-content">
+            <h2>Add Project</h2>
+            <form id="projectSubmit">
+                <div>
+                    <label>
+                        Project Name:
+                    </label>
+                    <input type="text" id="projectname" name="name" required>
+                </div>
+                
+
+            </form>
+            <div class="formAction">
+                <button id="closeProjectPopup" class="closeButton">Close</button>
+                <button id="AddProjectButton" type="submit" class="actionButton">Add Project</button>
+            </div>
+        </div>
+  </div>
+
+
+
+
+        
+
+
+    </div>
+
+
+    <!--displaying all tasks list-->
+    
+    
+    <div id="taskListMainDiv">
+        <ul id="taskList">
+
+        </ul>
+
+    </div>
+
+
+
+</body>
+</html>
